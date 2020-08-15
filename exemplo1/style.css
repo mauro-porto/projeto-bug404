@@ -1,0 +1,21 @@
+div#predio {
+  position: relative;
+  left: 300px;
+}
+
+div#videosLeft {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+}
+
+div#videosRight {
+  position: absolute;
+  top: 20px;
+  left: 525px;
+}
+
+iframe {
+  display: block;
+  margin: 20px;
+}
