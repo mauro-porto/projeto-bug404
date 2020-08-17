@@ -10,13 +10,6 @@
     position: relative;
   }
   
-  .portfolio .portfolio-gallery .item img{
-    width: 80%;
-    display: block;
-    position: relative;
-    margin-top: 50px;
-  }
-  
   .portfolio .portfolio-gallery .item .overlay {
     width: 80%;
     position: absolute;
@@ -45,15 +38,6 @@
     animation: galleryIcon .8s ease;
   }
   
-  .portfolio .portfolio-gallery .item .overlay .fa {
-    animation: galleryIcon .8s ease;
-  }
-  
-  video {
-    /* background: transparent url('video-image.jpg') 50% 50% / cover no-repeat ; */
-    object-fit: inherit;
-  }
-
   .lightbox {
     position: fixed;
     left: 0;
@@ -89,8 +73,3 @@
     z-index: 101;
   }
   
-  .lightbox video {
-  display: block;
-  width: 600px;
-  height: 335px;
-  }

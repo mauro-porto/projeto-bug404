@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); /*icones das redes sociais*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px; 
+}
+
+.section-title h1 {
+display: inline-block;
+font-size: 35px;
+text-transform: uppercase;
+font-weight: 600;
+color: #ffffff;
+margin: 0 0 10px;
+position: relative;
+}
+
+.section-title h1:before {
+  content: '';
+  left: 0;
+  position: absolute;
+  height: 2px;
+  right: 0%; /*cor embaixo dos titulos, quanto mais % menor a linha*/
+  background-color: #ff912b;
+  bottom: 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*Header*/
+header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid #ffffff;
+  padding: 0px 15px;
+  z-index: 10;
+}
+
+header {
+  top: 0px;
+  position: sticky;
+  background-color: #000000;  
+} 
+
+header .row {
+justify-content: space-between;
+align-items: center;
+}
+
+header .brand-name a{
+text-decoration: none;
+font-size: 22px;
+font-weight: 600;
+color: #ffffff;
+text-transform: uppercase;
+position: relative;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar ul li {
+display: inline-block;
+margin-left: 35px;
+}
+
+header .navbar ul li a {
+font-size: 15px;
+text-decoration: none;
+line-height: 72px;
+color: #ffffff;
+display: block; 
+font-weight: 600;
+position: relative;
+}
+
+header .navbar ul li a::before {
+  content: '';
+  height: 3px;
+  background-color: #ffffff;
+  width: 0%;
+  position: absolute;
+  right: 0px;
+  bottom: -1px;
+  transition: all .5s ease;
+}
+
+header .navbar ul li a:hover::before {
+width: 100%;
+left: 0;
+}
+
+header .navbar ul li a.active::before {
+  width: 100%;
+  left: 0;
+}
+
+/*Home Section*/
+.home {
+  min-height: 100vh;
+  background-image: url("../imagens/predioescuro-4x20.jpg");
+  background-size: cover; /*amplia e deixa uma só*/
+  background-position: center;
+  padding: 15px;
+}
+
+.home .full-screen {
+  min-height: 100vh;
+}
+
+.home .home-content { 
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .home-content .block { 
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 35px;
+  border-left: 5px solid #ff912b;
+  margin: auto;
+  text-align: center;
+}
+
+.home .home-content .block h6 {
+color: #ffffff;
+font-size: 18px;
+font-weight: 500;
+margin: 0;
+padding: 0;
+}
+
+.home .home-content .block h1 {
+  color: #ff912b;
+  font-size: 100px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.home .home-content .block h3 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+/*depoimentos*/
+.depoimentos {
+  background-color: #000000;
+  padding: 100px 0px 70px;
+}
+
+.depoimentos .section-title h1:before {
+  left: 0%;
+}
+
+.depoimentos .depoimentos-content { /*o container*/
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.depoimentos .depoimentos-content .box { 
+  background-color: #ff912b;
+  padding: 6px;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 5px);
+  height: 226px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.depoimentos .depoimentos-content .box::before {
+  content: '';
+  height: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all .5s ease;
+}
+
+.depoimentos .depoimentos-content .box:hover::before {
+width: 100%;
+}
+
+.depoimentos .depoimentos-content .box h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+/*Footer*/
+footer {
+  padding: 10px ;
+  background-color: #ffffff;
+}
+
+footer .final-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: #000000;
+  font-weight: 600;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer .social a {
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 20px;
+  transition: all .5s ease;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+footer .social a:hover {
+  color: #ff912b;
+}
+
+/*copyright*/
+.copyright {
+  background-color: #ffffff;
+  border-top: 1px solid #1d1d27;
+  padding: 15px;
+}
+
+.copyright p {
+  color: #838383;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+}
