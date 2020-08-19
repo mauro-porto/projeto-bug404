@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
   <title>Bug404</title>
 </head>
 
@@ -56,38 +57,43 @@
         <div class="row">
           <div class="depoimentos-content">
             <div class="box">
-              <iframe width="358" height="215" src="https://www.youtube.com/embed/9mkFto5uhjU" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <div class="video" style="background-image: url(../imagens/felipe-varanda.jpg);"><a class="venobox"
+                  data-autoplay="true" data-vbtype="video" href="https://youtu.be/kPeuVET1-Po" data-gall="myGallery"><i
+                    class="fa fa-play-circle" aria-hidden="true"></i></div>
+              </a>
             </div>
             <div class="box">
-              <iframe width="358" height="215" src="https://www.youtube.com/embed/9mkFto5uhjU" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <div class="video" style="background-image: url(../imagens/bruna-ventura.jpg);">
+                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/H0IGKKB8H20"
+                  data-gall="myGallery"><i class="fa fa-play-circle" aria-hidden="true"></i>
+                </a></div>
             </div>
             <div class="box">
-              <iframe width="358" height="215" src="https://www.youtube.com/embed/9mkFto5uhjU" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <div class="video" style="background-image: url(../imagens/beto-pego.jpg);">
+                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/fEXaOh8wzeM"
+                  data-gall="myGallery"><i class="fa fa-play-circle" aria-hidden="true"></i>
+                </a></div>
             </div>
             <div class="box">
-              <iframe width="358" height="215" src="https://www.youtube.com/embed/bW2w-0e9QcA" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <div class="video" style="background-image: url(../imagens/felipe-varanda.jpg);"><a class="venobox"
+                  data-autoplay="true" data-vbtype="video" href="https://youtu.be/kPeuVET1-Po" data-gall="myGallery"><i
+                    class="fa fa-play-circle" aria-hidden="true"></i></div>
+              </a>
             </div>
             <div class="box">
-              <iframe width="358" height="215" src="https://www.youtube.com/embed/bW2w-0e9QcA" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <div class="video" style="background-image: url(../imagens/bruna-ventura.jpg);">
+                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/H0IGKKB8H20"
+                  data-gall="myGallery"><i class="fa fa-play-circle" aria-hidden="true"></i>
+                </a></div>
             </div>
             <div class="box">
-              <iframe width="358" height="215" src="https://www.youtube.com/embed/bW2w-0e9QcA" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <div class="video" style="background-image: url(../imagens/beto-pego.jpg);">
+                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/fEXaOh8wzeM"
+                  data-gall="myGallery"><i class="fa fa-play-circle" aria-hidden="true"></i>
+                </a></div>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <!--End depoimentos-->
 
@@ -117,6 +123,19 @@
     </section>
     <!--End CopyRight-->
   </div>
+  <script type="text/javascript" src="./jquery/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="./venobox/venobox.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.venobox').venobox({
+        closeColor: '#f4f4f4',
+        spinColor: '#f4f4f4',
+        arrowsColor: '#ff8800',
+        closeBackground: '#ff8800',
+        overlayColor: 'rgba(23,25,29,0.8)'
+      });
+    });
+  </script>
 </body>
 
 </html>

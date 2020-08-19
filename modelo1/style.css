@@ -234,6 +234,36 @@ width: 100%;
   margin: 0;
 }
 
+.video {
+  height: 220px;
+  grid-column-start: span 3;
+  position: absolute;
+  width: 350px;
+  left: 5px;
+  top: 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.video:hover {
+transform: scale(1.03);
+}
+
+.video i {
+  cursor: pointer;
+  font-size: 60px;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0.85;
+  position: absolute;
+  top: 120px;
+}
+
+.video i:hover {
+  opacity: 1;
+}
+
+
 /*Footer*/
 footer {
   padding: 10px ;
