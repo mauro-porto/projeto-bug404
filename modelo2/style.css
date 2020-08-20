@@ -1,5 +1,5 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 :root {
   --accent: #ff8800;
@@ -16,7 +16,7 @@ margin: 0;
 }
 
 body {
-background-color: var(--dark);
+  background-image: url("../imagens/background-original.png");
 }
 
 p, button, h1, h4 {
@@ -24,13 +24,13 @@ p, button, h1, h4 {
 }
 
 p, h1 {
-  font-family: 'Opens Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 h4, button {
-  font-family: 'Opens Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -65,7 +65,7 @@ grid-template-areas: "top_section" "content_section";
   display: grid;
   grid-template-columns: 10% 1fr 10%;
   grid-template-areas: ". header .";
-  background: linear-gradient(var(--overlay),var(--overlay)), url(../imagens/predio-4x20.jpg);
+  background: linear-gradient(var(--overlay),var(--overlay)), url(../imagens/background-original.png);
 }
 
 header {
@@ -83,8 +83,16 @@ header p {
 header button {
   width: 131px;
   padding: 12px 0;
+  margin: 15px;
   background-color: var(--accent);
   border: none;
+}
+
+div#logo {
+  background-image: url(../imagens/logo-escrito.png);
+  margin: auto;
+  width: 700px;
+  height: 300px;
 }
 
 .venobox {
@@ -95,16 +103,12 @@ header button {
   grid-area: content_section;
   display: grid;
   grid-template-columns: 10% 1fr 10%;
-  grid-template-areas: ". playlist_one ." ". playlist_two .";
+  grid-template-areas: ". playlist_one .";
   margin-bottom: 60px;
 }
 
 .playlist_one {
   grid-area: playlist_one;
-}
-
-.playlist_two {
-  grid-area: playlist_two
 }
 
 .playlist_title {
@@ -130,7 +134,7 @@ header button {
 }
 
 .video:hover {
-transform: scale(1.05);
+transform: scale(1.16);
 }
 
 .video i {
@@ -149,6 +153,59 @@ transform: scale(1.05);
   opacity: 1;
 }
 
+/*Footer*/
+footer {
+  padding: 5px ;
+  background-color: #000000;
+}
+
+footer .final-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 35px;
+  color: #ff8800;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer .social a {
+  color: #ff8800;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 20px;
+  transition: all .5s ease;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+footer .social a:hover {
+  color: #ffffff;
+}
+
+/*copyright*/
+.copyright {
+  background-color: #000000;
+  border-top: 1px solid #1d1d27;
+  padding: 15px;
+}
+
+.copyright p {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
 /*reponsive*/
 @media only screen and (max-width: 1200px) {
   .video {
@@ -161,16 +218,40 @@ transform: scale(1.05);
   .video {
     grid-column-start: span 12; 
   }
+  div#logo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 450px;
+    height: 200px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .video {
     grid-column-start: span 16; 
   }
-  .top_section {
+ 
+  div#logo {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    width: 400px;
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .video {
+    grid-column-start: span 16; 
+  }
+ 
+  div#logo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 320px;
+    height: 140px;
   }
 }
 
